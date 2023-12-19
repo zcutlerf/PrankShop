@@ -41,26 +41,29 @@ struct ItemDetailView: View {
                 ScrollView(.horizontal) {
                     HStack {
                         ForEach(shop.itemsRelated(to: item), id: \.self) { item in
-                            VStack {
-                                Image(item.imageResourceName)
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 100.0, height: 100.0)
-                                    .clipped()
-                                Text(item.name)
-                                Text(item.price.formatted(.currency(code: "USD")))
-                                    .foregroundStyle(.green)
-                                    .font(.caption)
+                            NavigationLink(value: item) {
+                                VStack {
+                                    Image(item.imageResourceName)
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 100.0, height: 100.0)
+                                        .clipped()
+                                    Text(item.name)
+                                    Text(item.price.formatted(.currency(code: "USD")))
+                                        .foregroundStyle(.green)
+                                        .font(.caption)
+                                }
                             }
                         }
                     }
                 }
             }
             .padding()
+            .navigationTitle(item.name)
         }
     }
 }
 
 #Preview {
-    ItemDetailView(shop: Shop(), item: Item(name: "Sample Item", description: "This is a description la la la!", price: 1.99, imageResourceName: "cardDeck"))
+    ItemDetailView(shop: Shop(), item: Item(name: "Sample Item", description: "This is a description la la la la!", price: 1.99, imageResourceName: "cardDeck"))
 }
