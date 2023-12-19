@@ -18,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		5D09FD1A2B31E21300BBB234 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		5D09FD1C2B3239E900BBB234 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5D09FD1E2B32471600BBB234 /* PrankShopHiFi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PrankShopHiFi.png; sourceTree = "<group>"; };
 		5DF6BAB22B31D1BB00360403 /* PrankShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrankShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF6BAB52B31D1BB00360403 /* PrankShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrankShopApp.swift; sourceTree = "<group>"; };
 		5DF6BAB72B31D1BB00360403 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +43,8 @@
 		5DF6BAA92B31D1BB00360403 = {
 			isa = PBXGroup;
 			children = (
+				5D09FD1C2B3239E900BBB234 /* README.md */,
+				5D09FD1E2B32471600BBB234 /* PrankShopHiFi.png */,
 				5DF6BAB42B31D1BB00360403 /* PrankShop */,
 				5DF6BAB32B31D1BB00360403 /* Products */,
 			);
