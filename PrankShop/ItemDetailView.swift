@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+#warning("As a user, when I tap on a related item in the ItemDetailView, I want to Navigation Link to another ItemDetailView, so I can see details about a related item.")
 struct ItemDetailView: View {
     @ObservedObject var shop: Shop
     

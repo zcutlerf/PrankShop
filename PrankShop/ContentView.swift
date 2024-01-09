@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+#warning("As a user, I want to see a Navigation Title that says 'Prank Shop' on ContentView.")
+#warning("As a user, when I tap on an item in the Prank Shop, I want to Navigation Link to the ItemDetailView, so I can see details about the specific item. I also want the Navigation Title of ItemDetailView to say the name of the item I'm looking at, so I know where I am.")
 struct ContentView: View {
     @StateObject var shop = Shop()
     
